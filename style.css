@@ -7,11 +7,13 @@ body{
 background: black;
 }
 .ff{
-background-image: linear-gradient(270deg, rgba(246,246,246,0) 0%, rgba(0,0,0,0.8) 100%),url('https://images.unsplash.com/photo-1534431295023-07f54e7a6961?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+/* background-image: linear-gradient(270deg, rgba(246,246,246,0) 0%, rgba(0,0,0,0.8) 100%),url('https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'); */
+background-image: linear-gradient(270deg, rgba(246,246,246,0) 0%, rgba(0,0,0,0.8) 100%),url('./rolands-varsbergs-miKmVyq3qhE-unsplash2.jpg');
 background-size: cover;
 max-width: 100%;
 background-repeat: no-repeat;
-height: 100vh;
+height: 150vh;
+
 /* background: hsla(0, 0%, 0%, 1); */
 
 /* background: linear-gradient(360deg, hsla(0, 0%, 0%, 1) , hsla(0, 0%, 100%, 1) 100%); */
@@ -40,7 +42,7 @@ height: 100vh;
     line-height: 50px;
     font-size: 1.5rem;
 }
-.banner-text button{
+ .button1{
     background-color:#FF510A;
     border: none;
     color: white;
@@ -51,6 +53,42 @@ height: 100vh;
     font-weight: 600;
     margin-top: 20px;
 }
-.banner-text button i{
+.button1 i{
     color: white;
+}
+
+/* About Us */
+
+.aboutus img{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    top: -10%;
+    z-index: 1;
+}
+.aboutcontent{
+    color: white;
+}
+
+/* Three Figures */
+
+.tfigures h2{
+font-weight: 700;
+color: #FF510A;
+text-align: center;
+font-size: 5.5rem;
+}
+.tfigures h6{
+    text-align: center;
+    color: rgb(209, 192, 192);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.two{
+     padding-top: 120px;
+    
+     /* vertical-align: text-bottom; */
+}
+.three{
+padding-top: 220px;
 }
