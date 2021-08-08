@@ -7,11 +7,13 @@ body{
 background: black;
 }
 .ff{
-background-image: linear-gradient(270deg, rgba(246,246,246,0) 0%, rgba(0,0,0,0.8) 100%),url('https://images.unsplash.com/photo-1534431295023-07f54e7a6961?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+/* background-image: linear-gradient(270deg, rgba(246,246,246,0) 0%, rgba(0,0,0,0.8) 100%),url('https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'); */
+background-image: linear-gradient(270deg, rgba(246,246,246,0) 0%, rgba(0,0,0,0.8) 100%),url('./rolands-varsbergs-miKmVyq3qhE-unsplash2.jpg');
 background-size: cover;
 max-width: 100%;
 background-repeat: no-repeat;
-height: 100vh;
+height: 150vh;
+
 /* background: hsla(0, 0%, 0%, 1); */
 
 /* background: linear-gradient(360deg, hsla(0, 0%, 0%, 1) , hsla(0, 0%, 100%, 1) 100%); */
@@ -40,7 +42,7 @@ height: 100vh;
     line-height: 50px;
     font-size: 1.5rem;
 }
-.banner-text button{
+ .button1{
     background-color:#FF510A;
     border: none;
     color: white;
@@ -51,6 +53,131 @@ height: 100vh;
     font-weight: 600;
     margin-top: 20px;
 }
-.banner-text button i{
+.button1 i{
     color: white;
 }
+
+/* About Us */
+
+.aboutus img{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    top: -10%;
+    z-index: 1;
+}
+.aboutcontent{
+    color: white;
+    /* width: 70%;
+    margin-top: 30%; */
+    padding-top: 5%;
+}
+.aboutcontent p{
+    width: 70%;
+    font-size: 1.1rem;
+}
+
+/* Three Figures */
+
+.tfigures h2{
+font-weight: 700;
+color: #FF510A;
+text-align: center;
+font-size: 5.5rem;
+}
+.tfigures h6{
+    text-align: center;
+    color: rgb(209, 192, 192);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.two{
+     padding-top: 120px;
+    
+     /* vertical-align: text-bottom; */
+}
+.three{
+padding-top: 220px;
+}
+
+/* Lets See the World */
+.letsee1{
+    color: white;
+}
+.letsee1 h2{
+    width: 50%;
+    font-size:  2.3rem;
+    letter-spacing : 2px;
+    margin-left: 20%;
+}
+.letsee1 button{
+    margin-left: 20%;
+}
+.letsee2{
+    color: white;
+}
+.letsee2 p{
+    width: 70%;
+    font-size: 1.1rem;
+}
+.letsee{
+    margin: 25px 0px;
+    /* padding-top: 10%; */
+    background-color: #0A0A0A;
+    padding: 10%;
+}
+
+/* Slider */
+.slider{
+    height: 700px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.slide-track{
+    display: flex;
+    width: calc(500px * 6);
+    animation: scroll 40s linear;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(calc(-400px * 3));
+    }
+}
+.slide{
+    height: 600px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+.slide img:hover{
+    transform: scale(1.1,1.1);
+    transition: transform 0.5s ease;
+}
+.imgcontent{
+    color: white;
+    z-index: 1000;
+    position: relative;
+    left: -65%;
+    bottom: -20%;
+    font-size: 2.5rem;
+}
+
+/* .slider::before, 
+.slider::after {
+    background-color: #
+} */
+
