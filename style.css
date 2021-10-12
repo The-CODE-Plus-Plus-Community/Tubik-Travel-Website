@@ -140,7 +140,7 @@ padding-top: 220px;
 .slide-track{
     display: flex;
     width: calc(500px * 6);
-    animation: scroll 40s linear;
+    animation: scroll 50s linear;
     animation-iteration-count: infinite;
     overflow: hidden;
 }
@@ -157,23 +157,88 @@ padding-top: 220px;
     width: 500px;
     display: flex;
     align-items: center;
-    padding: 15px;
+    justify-content: center;
+    /* padding: 15px; */
+    margin: 15px;
+    position: relative;
 }
 .slide img{
     width: 100%;
     height: 100%;
 }
-.slide img:hover{
+.slide:hover{
     transform: scale(1.1,1.1);
     transition: transform 0.5s ease;
 }
+.slide:nth-of-type(1){
+    background: url('https://images.unsplash.com/photo-1520116468816-95b69f847357?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1868&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%;
+    height: 100%; */
+}
+.slide:nth-of-type(2){
+    background: url('https://images.unsplash.com/photo-1619537905033-fb5406e5a1aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1900&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%;
+    height: 100%; */
+}
+.slide:nth-of-type(3){
+    background: url('https://images.unsplash.com/photo-1504954834985-95a7562d2439?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%;
+    height: 100%; */
+}
+.slide:nth-of-type(4){
+    background: url('https://images.unsplash.com/photo-1616628950295-d3288bd7a96d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%;
+    height: 100%; */
+}
+.slide:nth-of-type(5){
+    background: url('https://images.unsplash.com/photo-1598194310253-4415c3c052ef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%;
+    height: 100%; */
+}
+.slide:nth-of-type(6){
+    background: url('https://images.unsplash.com/photo-1576359877473-d92bc837facc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHRvdXIlMjBhbmQlMjB0cmF2ZWwlMjByaXZlciUyMGJvYXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%;
+    height: 100%; */
+}
+.slide:nth-of-type(7){
+    background: url('https://images.unsplash.com/photo-1504598318550-17eba1008a68?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=333&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%;
+    height: 100%; */
+}
+
 .imgcontent{
     color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
-    position: relative;
-    left: -65%;
-    bottom: -20%;
-    font-size: 2.5rem;
+    position: absolute;
+    vertical-align: baseline;
+    /* bottom: -30%; */
+    font-size: 1.2rem;
+    /* width: 300px; */
+    bottom: 10%;
+}
+.slide .imgcontent{
+    vertical-align: bottom;
+}
+.imgcontent span{
+font-size: 2rem;
+width: 100%;
 }
 
 /* .slider::before, 
@@ -181,3 +246,77 @@ padding-top: 220px;
     background-color: #
 } */
 
+/* Blog */
+.blog-header{
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    /* margin: 50px 0; */
+}
+.blog{
+    margin: 80px 0 30px 0;
+}
+.blog-content{
+display: flex;
+align-items: center;
+justify-content: center;
+float: left;
+}
+.blog-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+.list-group{
+    color: white;
+    /* width: 70%; */
+    
+}
+.list-group h2{
+    font-size: 0.8rem;
+    color: grey;
+}
+.list-group p{
+    font-size: 1.2rem;
+    
+}
+.blog-list ul hr{
+    color: rgba(66, 63, 63, 0.808);
+    /* width: 70%; */
+}
+.blog-list ul li{
+    float: right;
+    width: 70%;
+    cursor: pointer;
+}
+.blog-content{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.blog-content img{
+    width: 80%;
+    height: 70%;
+    float: left;
+}
+.blog-content h4{
+width: 80%;
+float: left;
+margin: 10px 0;
+}
+.blog-content p{
+    width: 80%;
+    float: left;
+    margin: 10px 0;
+}
+.blog-list,
+.blog-content{
+    margin-top: 50px;
+}
+.blog-list ul .active{
+    background: white !important;
+    color: #0A0A0A;
+    padding: 10px;
+    font-weight: 700;
+}
